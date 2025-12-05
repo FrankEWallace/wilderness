@@ -1,73 +1,134 @@
-# Welcome to your Lovable project
+# Wild Wanderlust Hub
 
-## Project info
+A modern wilderness travel and safari website built with cutting-edge web technologies. Discover breathtaking destinations, plan your wilderness adventures, and connect with nature through our immersive digital experience.
 
-**URL**: https://lovable.dev/projects/4a8ec0c7-45c9-4f26-a884-5f4afa4fb7cf
+## Features
 
-## How can I edit this code?
+- **Responsive Design**: Beautiful, mobile-first design that works on all devices
+- **Modern UI Components**: Built with shadcn/ui for consistent, accessible components
+- **Fast Performance**: Powered by Vite for lightning-fast development and builds
+- **Type Safety**: Full TypeScript implementation for robust, maintainable code
+- **Interactive Elements**: Smooth animations and engaging user interactions
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
+### Prerequisites
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4a8ec0c7-45c9-4f26-a884-5f4afa4fb7cf) and start prompting.
+- Node.js (v16 or higher)
+- npm or yarn package manager
 
-Changes made via Lovable will be committed automatically to this repo.
+### Installation
 
-**Use your preferred IDE**
+1. Clone the repository:
+```bash
+git clone https://github.com/FrankEWallace/wilderness.git
+cd wilderness
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+2. Install dependencies:
+```bash
+npm install
+```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open your browser and navigate to `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for Production
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # Base UI components (buttons, cards, etc.)
+│   ├── About.tsx       # About section component
+│   ├── ContactForm.tsx # Contact form component
+│   ├── Destinations.tsx# Destination showcase
+│   ├── Experience.tsx  # Experience section
+│   ├── Header.tsx      # Navigation header
+│   ├── Hero.tsx        # Hero section
+│   └── Footer.tsx      # Site footer
+├── pages/              # Page components
+│   ├── Index.tsx       # Home page
+│   └── NotFound.tsx    # 404 page
+├── assets/             # Static assets (images, etc.)
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+└── App.tsx             # Main application component
+```
 
-This project is built with:
+## Technology Stack
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+This project leverages modern web technologies for optimal performance and developer experience:
 
-## How can I deploy this project?
+### Core Framework
+- **React 18** - Latest React with concurrent features and improved performance
+- **TypeScript** - Type-safe JavaScript for better code quality and developer experience
+- **Vite** - Ultra-fast build tool and development server with HMR
 
-Simply open [Lovable](https://lovable.dev/projects/4a8ec0c7-45c9-4f26-a884-5f4afa4fb7cf) and click on Share -> Publish.
+### UI & Styling
+- **Tailwind CSS** - Utility-first CSS framework for rapid UI development
+- **shadcn/ui** - High-quality, accessible React components built on Radix UI
+- **Radix UI** - Unstyled, accessible UI primitives
+- **Lucide React** - Beautiful, customizable icon library
 
-## Can I connect a custom domain to my Lovable project?
+### State Management & Forms
+- **TanStack Query (React Query)** - Powerful server state management
+- **React Hook Form** - Performant form handling with minimal re-renders
+- **Zod** - TypeScript-first schema validation
 
-Yes, you can!
+### Development Tools
+- **ESLint** - Code linting and quality assurance
+- **TypeScript ESLint** - TypeScript-specific linting rules
+- **SWC** - Super-fast JavaScript/TypeScript compiler
+- **PostCSS** - CSS processing with Autoprefixer
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Additional Libraries
+- **React Router DOM** - Client-side routing
+- **Date-fns** - Modern date utility library
+- **Embla Carousel** - Lightweight carousel library
+- **Recharts** - Composable charting library
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Why This Tech Stack?
+
+1. **Performance**: Vite + SWC provide lightning-fast development and build times
+2. **Developer Experience**: TypeScript + ESLint ensure code quality and catch errors early
+3. **Scalability**: Component-based architecture with proper type safety
+4. **Accessibility**: Radix UI components are built with accessibility as a priority
+5. **Modern Standards**: Uses latest web standards and best practices
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint for code quality checks
+
+## Deployment
+
+This project can be deployed to any static hosting service:
+
+- **Vercel**: Connect your GitHub repository for automatic deployments
+- **Netlify**: Drag and drop the `dist` folder after running `npm run build`
+- **GitHub Pages**: Use GitHub Actions for automated deployments
+- **AWS S3 + CloudFront**: For enterprise-level hosting
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
